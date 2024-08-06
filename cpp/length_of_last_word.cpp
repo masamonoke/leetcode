@@ -1,5 +1,5 @@
-#include <string>
-#include <iostream>
+#include "length_of_last_word.hpp"
+
 #include <set>
 
 void trim(std::string& s) {
@@ -30,10 +30,4 @@ int length_of_last_word(std::string s) {
 	} else {
 		return s.length() - i - 1;
 	}
-}
-
-int main() {
-	std::string s = "b a ";
-	std::cout << length_of_last_word(s) << "\n";
-	return 0;
 }
